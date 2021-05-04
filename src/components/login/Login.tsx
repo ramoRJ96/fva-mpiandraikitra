@@ -26,10 +26,19 @@ const useStyles = makeStyles((theme: Theme) =>
         borderTopLeftRadius: 50,
         borderBottomRightRadius: 50,
       },
+      "@media screen and (max-width: 640px)": {
+        width: 300,
+      },
+      "@media screen and (max-width: 320px)": {
+        width: 260,
+      }
     },
     input: {
       width: 300,
       marginBottom: 30,
+      "@media screen and (max-width: 640px)": {
+        width: 200,
+      }
     },
     user: {
       marginTop: 40,
