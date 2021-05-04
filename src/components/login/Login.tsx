@@ -1,8 +1,8 @@
-import React, { MouseEvent } from "react";
+import React from "react";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import Button from "../shared/button/CustomButton";
 import clsx from "clsx";
-import { Grid, TextField } from "@material-ui/core";
+import { TextField } from "@material-ui/core";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -21,10 +21,10 @@ const useStyles = makeStyles((theme: Theme) =>
       borderRadius: 5,
       boxShadow: "0px 2px 10px 5px rgba(0,0,0,0.12)",
       width: 400,
-      transition: "all 300ms ease-in-out",
+      transition: "all 150ms ease-in-out",
       "&:hover": {
-        borderTopLeftRadius: 30,
-        borderBottomRightRadius: 30,
+        borderTopLeftRadius: 50,
+        borderBottomRightRadius: 50,
       },
     },
     input: {
