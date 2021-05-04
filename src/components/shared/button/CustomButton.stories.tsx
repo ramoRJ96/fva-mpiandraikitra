@@ -11,18 +11,26 @@ export default {
   argTypes: { onClick: { action: "clicked" } },
 } as Meta;
 
-const useStyles = makeStyles((theme: Theme) => createStyles({
-  button: {
-    borderRadius: 30,
-  }
-}));
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    button: {},
+  })
+);
 
 const Template: Story<Props> = (args) => (
   <Stories component={CustomButton} args={args} useStyles={useStyles} />
 );
 
 export const DefaultButton = Template.bind({});
-DefaultButton.args = { text: "Primary button", color: "primary", className: "button"};
+DefaultButton.args = {
+  text: "Primary button",
+  color: "primary",
+  className: "button",
+};
 
 export const SecondaryButton = Template.bind({});
-SecondaryButton.args = { text: "Secondary button", color: "secondary", className: "button" };
+SecondaryButton.args = {
+  text: "Secondary button",
+  color: "secondary",
+  className: "button",
+};
